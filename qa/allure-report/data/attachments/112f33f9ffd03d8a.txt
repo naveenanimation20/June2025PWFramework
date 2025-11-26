@@ -1,0 +1,4 @@
+Filled text : abcxyzzz@nal.com into element : getByRole('textbox', { name: 'E-Mail Address' })
+Filled text : test123456 into element : getByRole('textbox', { name: 'Password' })
+Clicked on element : input[type="submit"][value="Login"]
+invalid login warning message:  Warning: No match for E-Mail Address and/or Password.

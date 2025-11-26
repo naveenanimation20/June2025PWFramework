@@ -1,0 +1,6 @@
+Filled text : gagantyagi@test.com into element : getByRole('textbox', { name: 'E-Mail Address' })
+Filled text : test@123 into element : getByRole('textbox', { name: 'Password' })
+Clicked on element : input[type="submit"][value="Login"]
+search key : Dummy
+Filled text : Dummy into element : getByRole('textbox', { name: 'Search' })
+Clicked on element : locator('#search > span.input-group-btn > button.btn')
