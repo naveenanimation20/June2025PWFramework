@@ -25,17 +25,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.56.1",
+    "@playwright/test": "^1.57.0",
     "@types/node": "^24.10.0",
-    "allure-commandline": "^2.34.1",
-    "allure-playwright": "^3.4.2",
-    "playwright-html-reporter": "^0.1.11",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
-    "eslint": "^8.57.0"
-
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.2",
+    "eslint": "^8.57.0",
+    "playwright-html-reporter": "^0.1.11"
   },
   "dependencies": {
-    "csv-parse": "^6.1.0"
+    "ajv": "^8.17.1",
+    "csv-parse": "^6.1.0",
+    "jsonpath-plus": "^10.3.0"
   }
 }

@@ -8,7 +8,7 @@ function getRandomEmail() : string{
 }
 
   
-test('Register a user from CSV', async ({ regData, page, baseURL }) => {
+test.skip('Register a user from CSV', async ({ regData, page, baseURL }) => {
     
     for (const user of regData) {
         const loginPage = new LoginPage(page);

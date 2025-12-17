@@ -20,6 +20,7 @@ export class ResultsPage{
 
     //3. page actions:
     async getSearchResultsCount(): Promise<number> {
+        await this.page.waitForTimeout(2000);
         return await this.results.count();
     }
     

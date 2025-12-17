@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 import { ElementUtil } from '../utils/ElementUtil';
 
 
@@ -32,7 +32,7 @@ export class RegisterPage{
         this.newsletterNoRadio = page.getByRole('radio', { name: 'No' });
         this.agreeCheckbox = page.locator('[name="agree"]');
         this.continueButton = page.getByRole('button', { name: 'Continue' });
-        this.successMsg = page.getByText('Your Account Has Been Created!', { exact: true });
+        this.successMsg = page.getByText('Your Account Has Been Created!', { exact: true});
     }
 
 
@@ -60,7 +60,10 @@ async registerUser(
 
         await this.eleUtil.click(this.agreeCheckbox);
         await this.eleUtil.click(this.continueButton);
-        return await this.eleUtil.isVisible(this.successMsg);
+        //await this.page.waitForTimeout(3000);
+        //return await this.eleUtil.isVisible(this.successMsg);
+        await expect(this.successMsg).toBeVisible();
+        return true;
     }
 
     // async verifyAccountCreated() {

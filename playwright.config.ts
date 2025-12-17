@@ -39,6 +39,11 @@ export default defineConfig({
     screenshot: 'on',
     video: 'on',
     baseURL: 'https://naveenautomationlabs.com/opencart/index.php',
+
+    httpCredentials: {
+      username: 'admin',
+      password: 'admin'
+    }
     
   },
 
