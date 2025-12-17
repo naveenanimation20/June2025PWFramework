@@ -1,0 +1,3 @@
+Filled text : pwtest@nal.com into element : getByRole('textbox', { name: 'E-Mail Address' })
+Filled text : test123 into element : getByRole('textbox', { name: 'Password' })
+Clicked on element : input[type="submit"][value="Login"]
